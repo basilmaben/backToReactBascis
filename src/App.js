@@ -2,19 +2,36 @@ import "./styles.css";
 import ReactDOM from "react-dom";
 import React from "react";
 
-class MarkdownEditor extends React.Component {
+/* class EssayForm extends React.Component {
   constructor(props) {
     super(props);
-    this.md = new Remarkable();
+    this.state = {
+      value: "Please write an essay about your favorite DOM element."
+    };
+
     this.handleChange = this.handleChange.bind(this);
-    this.state = { value: "Hello, **world**!" };
+    this.handleSubmit = this.handleSubmit.bind(this);
   }
 
-  handleChange(e) {
-    this.setState({ value: e.target.value });
+  handleChange(event) {
+    this.setState({ value: event.target.value });
   }
 
-  getRawMarkup() {
-    return { __html: this.md.render(this.state.value) };
+  handleSubmit(event) {
+    alert("An essay was submitted: " + this.state.value);
+    event.preventDefault();
+  }
+
+  render() {
+    return (
+      <form onSubmit={this.handleSubmit}>
+        <label>
+          Essay:
+          <textarea value={this.state.value} onChange={this.handleChange} />
+        </label>
+        <input type="submit" value="Submit" />
+      </form>
+    );
   }
 }
+ */
