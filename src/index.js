@@ -7,9 +7,6 @@ const rootElement = document.getElementById("root");
 ReactDOM.render(
   <StrictMode>
     <App />
-    <Hooks />
-    <App />
-    <Hooks />
   </StrictMode>,
   rootElement
 );
